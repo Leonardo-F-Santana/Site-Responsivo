@@ -27,6 +27,12 @@ body{
     padding: 0 5%;
     margin: 0 auto;
 }
+
+section,
+footer{
+    padding: 2.7rem 0;
+}
+
 .btn-gradient{
     padding: 10px 25px;
     color: white;
@@ -89,6 +95,115 @@ main .container{
     z-index: 10;
 }
 /*responsivo*/
+.resultados{
+    background-color: #fa8607;
+}
+.resultados .container{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.resultados .resultados-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+.resultados .resultados-numeros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.resultados .resultados-numeros p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.resultados .resultados-numeros p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+/*section diferenciais*/
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;    
+}
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+.diferenciais .card img{
+    width: 60px;
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 700;
+}
+/*section diferenciais*/
+/*fim do responsivo*/
+/*section estadio*/
+.casa .container{
+    display: flex;
+    align-items: center;
+}
+.casa .casa-img{
+    width: 50%;
+}
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-text{
+    width: 50%;
+    padding-left: 60px;
+}
+.casa .casa-text h2{
+    font-size: 2.5em;
+}
+.casa .casa-text p{
+    margin: 20px 0;
+    color: var(--color-p);
+}
+.casa .casa-text p b{
+    color: black;
+    font-size: 25px;
+}/*section stadio*/
+/*footer*/
+footer{
+    background-color: var(--verde-escuro);
+}
+footer .container{
+    display: flex;
+    color: white;
+}
+footer .container ul{
+    width: 25%;
+}
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+footer .container .redes-sociais{
+    margin-right: 10px;
+}
+footer .container ul p{
+    margin-bottom: 40px;
+}
+footer .container li{
+    margin: 10px 0;
+}
+footer .container a{
+    color: white;
+}
+/*responsivo*/
 @media (max-width: 960px){
     .menu-icon{
         display: block;
@@ -124,4 +239,45 @@ main .container{
     main .container .main-text div{
         justify-content: center;
     }
+    .resultados .container{
+        flex-direction: column;
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numeros{
+        width: 100%;
+        text-align: center;
+    }
+    .resultados .resultados-numeros{
+        margin-top: 30px;
+    }
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    .diferenciais .card{
+        width: 100%;
+    }
+    .casa .container{
+        flex-direction: column-reverse;
+    }
+    .casa .casa-text,
+    .casa .casa-img{
+        width: 100%;
+        text-align: center;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
+@media(max-width:440px){
+    .resultados .resultados-numeros{
+        flex-direction: column;
+    }
+    main .container .main-text h1{
+        font-size: 3rem;
+    }
+}
+/*fim do responsivo*/
